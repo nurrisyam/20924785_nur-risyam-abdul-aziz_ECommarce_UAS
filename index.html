@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamers Room - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div id="keranjang-popup" class="popup-keranjang" style="display: none;">
+        <div class="popup-konten">
+          <h3>🛒 Isi Keranjang</h3>
+          <ul id="daftar-keranjang"></ul>
+          <button onclick="tutupKeranjang()">Tutup</button>
+        </div>
+      </div>
+      
+  <header> 
+    <!-- HEADER -->
+<header>
+    <div class="navbar">
+      <h1 class="logo">🎮 Gamers Room</h1>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#produk">Produk</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+          <li><a href="#" onclick="tampilkanKeranjang()">🛒 Keranjang (<span id="jumlah-keranjang">0</span>)</a></li>
+        </ul>
+      </nav>      
+    </div>
+  </header>
+  
+  <!-- INTRO / SAMBUTAN -->
+  <section class="intro">
+    <section id="home" class="intro">
+        <h2 id="animasi-teks"></h2>
+      </section>
+      
+    <p class="deskripsi">
+      Tempat terbaik untuk melengkapi ruang gaming impianmu!<br>
+      Nikmati pengalaman belanja perlengkapan gaming dengan harga bersahabat dan kualitas juara.
+    </p>
+    <p class="pantun">
+      🎧 Main game malam sampai subuh,<br>
+      Peralatan rusak, hatipun rapuh.<br>
+      🎯 Di Gamers Room semua lengkap,<br>
+      Belanja sekarang, jangan sampai terlambat!
+    </p>
+  </section>
+  
+  <section id="home" class="pantun"></section>
+
+  <section id="produk" class="produk-container"></section>
+  
+  <main id="kontak" class="kontak-form"></main>
+  
+
+    <section class="produk-container">
+      <div class="produk" onclick="lihatProduk('produk1.html')">
+        <img src="images/kursi gaming (2).jpg" alt="Kursi Gaming RGB">
+        <h2>Kursi Gaming RGB</h2>
+        <p>Desain ergonomis, nyaman untuk sesi gaming panjang.</p>
+        <p class="harga">Rp 1.500.000</p>
+        <button onclick="tambahKeKeranjang('Kursi Gaming RGB')">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk" onclick="lihatProduk('produk2.html')">
+        <img src="images/meja gaming asli.jpg" alt="Meja Gaming LED">
+        <h2>Meja Gaming LED</h2>
+        <p>Minimalis dengan lampu LED dan port USB.</p>
+        <p class="harga">Rp 1.200.000</p>
+        <button onclick="tambahKeKeranjang('Meja Gaming LED')">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk" onclick="lihatProduk('produk3.html')">
+        <img src="images/kybord gaming.jpg" alt="Keyboard Mechanical RGB">
+        <h2>Keyboard Mechanical</h2>
+        <p>Switch clicky dan responsif dengan RGB.</p>
+        <p class="harga">Rp 650.000</p>
+        <button onclick="tambahKeKeranjang('Keyboard Mechanical')">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk" onclick="lihatProduk('produk4.html')">
+        <img src="images/moush gaming.jpg" alt="Mouse Gaming DPI7200">
+        <h2>Mouse Gaming</h2>
+        <p>7 tombol dengan resolusi tinggi dan RGB.</p>
+        <p class="harga">Rp 350.000</p>
+        <button onclick="tambahKeKeranjang('Mouse Gaming')">Tambah ke Keranjang</button>
+      </div>
+      <div class="produk" onclick="lihatProduk('produk5.html')">
+        <img src="images/stik ps.jpg" alt="Headset Surround">
+        <h2>stik PS</h2>
+        <p>berbagai tombol buat unjuk skil.</p>
+        <p class="harga">Rp 200.000</p>
+        <button onclick="tambahKeKeranjang('stik ps')">Tambah ke Keranjang</button>
+      </div>
+    </section>
+  </main>
+
+  <main class="kontak-form">
+    <h2>Kontak Kami</h2>
+    <hr class="garis">
+
+    <form>
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="email@gmail.com" required>
+
+      <label for="pesan">Pesan</label>
+      <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan kamu di sini..." required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Email: risyamabdulaziz1@gmail.com | Telp: 0895342287748</p>
+    <p>Alamat: Kp. Lakbok, RT01 RW02, Desa Cihanjuang, Cimanggung, Sumedang</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
